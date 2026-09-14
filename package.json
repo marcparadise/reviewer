@@ -1,0 +1,12 @@
+{
+  "name": "reviewer-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import ./web/test/setup.js --test web/test/*.test.js",
+    "coverage": "node --import ./web/test/setup.js --test --experimental-test-coverage --test-coverage-exclude='web/test/**' web/test/*.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}
