@@ -1,0 +1,11 @@
+[Unit]
+Description=Reviewer local code review server
+
+[Service]
+Type=simple
+ExecStart=%h/go/bin/reviewer serve
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
